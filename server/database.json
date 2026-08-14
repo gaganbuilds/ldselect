@@ -15,6 +15,22 @@
       "capacity": 10,
       "status": "open",
       "createdAt": "2026-08-14T07:11:24.804Z"
+    },
+    {
+      "id": "test_domain",
+      "name": "Test Domain",
+      "description": "Temporary test domain for verifying admin domain creation.",
+      "capacity": 5,
+      "status": "open",
+      "createdAt": "2026-08-14T08:33:47.693Z"
+    },
+    {
+      "id": "test_domain2",
+      "name": "Test Domain 2",
+      "description": "Temporary",
+      "capacity": 5,
+      "status": "open",
+      "createdAt": "2026-08-14T08:34:17.470Z"
     }
   ],
   "candidates": [

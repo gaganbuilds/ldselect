@@ -5,7 +5,7 @@ import path from 'path';
 import dotenv from 'dotenv';
 
 // Load environment variables from server/.env if present
-dotenv.config({ path: path.join(process.cwd(), 'server', '.env') });
+dotenv.config({ path: path.join(process.cwd(), 'server', '.env'), override: true });
 
 const app = express();
 app.use(cors());
@@ -117,6 +117,14 @@ app.get('/api/settings/registration', (req, res) => {
 });
 
 // --- ADMIN API ---
+
+app.get('/api/debug-password', (req, res) => {
+  res.json({ 
+    pwd: ADMIN_PASSWORD, 
+    cwd: process.cwd(), 
+    envLoaded: process.env.ADMIN_PASSWORD !== undefined 
+  });
+});
 
 app.post('/api/admin/login', (req, res) => {
   const { password } = req.body;
