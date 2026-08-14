@@ -1,0 +1,33 @@
+{
+  "domains": [
+    {
+      "id": "cnn",
+      "name": "CNN",
+      "description": "",
+      "capacity": 10,
+      "status": "closed",
+      "createdAt": "2026-08-14T07:11:13.681Z"
+    },
+    {
+      "id": "ann",
+      "name": "ANN",
+      "description": "",
+      "capacity": 10,
+      "status": "open",
+      "createdAt": "2026-08-14T07:11:24.804Z"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "1786691509676",
+      "name": "GAGAN K M",
+      "candidateId": "ld1234",
+      "domainId": "cnn",
+      "timestamp": "2026-08-14T07:11:49.676Z"
+    }
+  ],
+  "settings": {
+    "registrationOpen": "true",
+    "adminPassword": "admin"
+  }
+}
